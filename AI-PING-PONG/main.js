@@ -70,6 +70,7 @@ function startGame()
 
 function draw(){
 
+  textFont('Righteous');
   background(0); 
   image(video, 0, 0, 700, 600);
 
@@ -95,16 +96,16 @@ function draw(){
     paddleInCanvas();
         
     //left paddle
-    fill(250,0,0);
-    stroke(0,0,250);
+    fill("#FF0055"); // Neon Pink
+    stroke("#FF0055");
     strokeWeight(0.5);
     paddle1Y = rightWristY; 
     rect(paddle1X,paddle1Y,paddle1,paddle1Height,100);
 
 
     //pc computer paddle
-    fill("#FFA500");
-    stroke("#FFA500");
+    fill("#00E5FF"); // Neon Cyan
+    stroke("#00E5FF");
     var paddle2y =ball.y-paddle2Height/2;  rect(paddle2Y,paddle2y,paddle2,paddle2Height,100);
     
     //function midline call
@@ -148,13 +149,13 @@ function midline(){
 //function drawScore show scores
 function drawScore(){
     textAlign(CENTER);
-    textSize(20);
+    textSize(24);
     fill("white");
-    stroke(250,0,0)
-    text("Player:",100,50)
-    text(playerscore,140,50);
-    text("Computer:",500,50)
-    text(pcscore,555,50)
+    noStroke();
+    text("Player:",100,50);
+    text(playerscore,155,50);
+    text("Computer:",500,50);
+    text(pcscore,580,50);
 }
 
 
@@ -182,14 +183,15 @@ function move(){
   }
 }
 if(pcscore ==4){
-    fill("#FFA500");
-    stroke(0)
+    fill(255, 165, 0, 200);
+    stroke(0);
     rect(0,0,width,height-1);
     fill("white");
     stroke("white");
-    textSize(25);
+    textSize(40);
     text("Game Over!",width/2,height/2);
-    text("Press Restart button to play again!",width/2,height/2+30)
+    textSize(20);
+    text("Press Restart button to play again!",width/2,height/2+50);
     noLoop();
     pcscore = 0;
 }

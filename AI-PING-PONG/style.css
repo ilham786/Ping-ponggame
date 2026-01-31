@@ -1,21 +1,54 @@
 
-.heading
+body
 {
-width: 100%;
-text-align: left;
-}
-.heading h3{
-    display: inline;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Righteous', cursive;
+    color: white;
 }
 
-.heading button{
-    float: right;
-    border: 1px solid white;
+.header_div
+{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#start ,#status, #restart
+.game_title {
+    margin: 0;
+    color: #00e5ff;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+    letter-spacing: 1px;
+}
+
+.game_console {
+    text-align: center;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #333;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#start, #restart
 {
-font-size: 22px;
+    font-size: 18px;
+    width: 150px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
 }
 
 .modal-dialog
@@ -27,15 +60,43 @@ font-size: 22px;
     text-align: left;
     font-size: 20px;
 }
-h4
-{
-   background-color: yellowgreen;
-   color:white;
-   line-height: 2;
+
+.modal-content {
+    background-color: #222;
+    color: white;
+    border: 1px solid #00e5ff;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
 }
-canvas 
-  {
-      border:3px solid whitesmoke;
-      border-radius: 20px;
-      box-shadow:  5px 5px 5px wheat;
-  }
+
+.modal-header {
+    border-bottom: 1px solid #444;
+}
+
+.close {
+    color: white;
+    text-shadow: none;
+    opacity: 0.8;
+}
+
+.close:hover {
+    color: #ff0055;
+    opacity: 1;
+}
+
+.footer
+{
+   margin-top: 20px;
+   text-align: center;
+}
+.footer h4 {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+canvas {
+    border: 2px solid #00e5ff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.2);
+}
