@@ -1,7 +1,7 @@
 # AI PING PONG 🏓🤖
 
 ## Description
-This is an interactive AI-powered Ping Pong game that utilizes machine learning to control the gameplay. By integrating the **ml5.js PoseNet** model, the game tracks the player's right wrist movement via webcam to control the paddle in real-time.
+This is an interactive AI-powered Ping Pong game that utilises machine learning to control the gameplay. By integrating the **ml5.js PoseNet** model, the game tracks the player's right wrist movement via webcam to control the paddle in real-time.
 
 ## Demo & Preview 📸
 Open `index.html` in a browser with webcam access.
@@ -50,7 +50,7 @@ Press **Play Game**, stand ~3–4 ft from your laptop, and move your right wrist
   - Ball speed: `ball.dx` / `ball.dy`
   - Game over score: `if(pcscore == 4) { ... }`
 - **Audio:** Sounds loaded are `ball_touch_paddel.wav` and `missed.wav`. You can replace these files in the project root.
-- **Difficulty:** Improve difficulty by modifying AI paddle behavior or ball speed.
+- **Difficulty:** Improve difficulty by modifying AI paddle behaviour or ball speed.
 
 ## Troubleshooting ⚠️
 - **No camera feed?** Ensure the browser has permission and test on `localhost` or `https`.
